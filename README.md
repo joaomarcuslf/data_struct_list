@@ -3,7 +3,7 @@
 Most of data structure class uses C, python or Java to teach, this lib was made to add some Data Structure Architecture using ruby syntax.
 
 ## TODO
-- [ ] Simple Linked List
+- [x] Simple Linked List
 - [ ] Double Linked List
 - [ ] Cycle Simple Linked List
 - [ ] Cycle Double Linked List
