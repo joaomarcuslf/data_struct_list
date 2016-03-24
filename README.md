@@ -1,28 +1,35 @@
 # DataStructList
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/data_struct_list`. To experiment with that code, run `bin/console` for an interactive prompt.
+Most of data structure class uses C, python or Java to teach, this lib was made to add some Data Structure Architecture using ruby syntax.
 
-TODO: Delete this and the text above, and describe your gem
+## TODO
+- [ ] Simple Linked List
+- [ ] Double Linked List
+- [ ] Cycle Simple Linked List
+- [ ] Cycle Double Linked List
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install this gem on terminal of you choice:
 
-```ruby
-gem 'data_struct_list'
+```sh
+ $ gem install 'data_struct_list'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install data_struct_list
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this gem on your code:
+```Ruby
+
+  include 'data_struct_list'
+
+  #Code
+
+```
+
+```ruby
+
+```
 
 ## Development
 
@@ -38,4 +45,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
