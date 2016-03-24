@@ -25,9 +25,23 @@ Add this gem on your code:
 
   #Code
 
-```
+   l = DataStructList::SimpleLinkedList.new # This will create a Simple Linked List
+   l.head.quant # => 0
 
-```ruby
+   my_info = {
+    name: "João Marcus",
+    age: 19,
+    fav_lang: "Ruby"
+   }
+
+   l.insert(my_info) # This will insert a new node at the first id, and 'my_info' will be it's hash info
+   l.first.hash[:name] # => "João Marcus"
+   l.head.quant # => 1
+
+   l.find(0) # This will return the desirable elm or nil
+
+   l.remove(0) # => nil
+   l.head.quant # => 0
 
 ```
 
@@ -45,3 +59,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
