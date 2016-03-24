@@ -21,12 +21,12 @@ module DataStructList
     end
   end
 
-  class SimpleLinkedList
+  class Stack
     attr_reader :first, :last, :head
     def initialize
       @head = Head.new
-      @first = nil
       @last = nil
+      @first = nil
     end
 
     def insert(hash)
@@ -44,6 +44,44 @@ module DataStructList
 
       return @last.id
     end
+
+    def find(id)
+      elm = @first
+
+      until elm == nil
+        if elm.id == id then break end
+        elm = elm.next
+      end
+
+      return elm
+    end
+
+    def remove
+      return nil if @head.quant == 0
+
+      elm = @head.next
+      @head.quant-=1
+
+      until elm.next == @last
+        if elm == @last then break end
+        elm = elm.next
+      end
+
+      if @first == @last then
+        @first = nil
+        @last = nil
+        @head.next = nil
+        return nil
+      end
+
+      aux = @last
+      @last = elm
+      elm.next = nil
+      aux = nil
+    end
+  end
+
+  class SimpleLinkedList < Stack
 
     def find(id)
       elm = @first

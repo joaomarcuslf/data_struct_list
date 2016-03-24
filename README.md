@@ -3,6 +3,7 @@
 Most of data structure class uses C, python or Java to teach, this lib was made to add some Data Structure Architecture using ruby syntax.
 
 ## TODO
+- [x] Stack
 - [x] Simple Linked List
 - [ ] Double Linked List
 - [ ] Cycle Simple Linked List
@@ -59,4 +60,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
