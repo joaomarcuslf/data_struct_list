@@ -5,7 +5,7 @@ Most of data structure class uses C, python or Java to teach, this lib was made 
 ## TODO
 - [x] Stack
 - [x] Simple Linked List
-- [ ] Double Linked List
+- [ ] Double Linked List <- Comming soon
 - [ ] Cycle Simple Linked List
 - [ ] Cycle Double Linked List
 
