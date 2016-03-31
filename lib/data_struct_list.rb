@@ -139,5 +139,29 @@ module DataStructList
 
       return @last.id
     end
+
+    def remove(id)
+      elm = @first
+      aux = @first
+
+      until elm == nil
+        if elm.id == id then break end
+        aux = elm
+        elm = elm.next
+      end
+
+      if elm!=nil then
+        aux.next = elm.next
+        @head.quant -= 1
+
+        if elm == @head.next
+          @first = elm.next
+          @head.next = @first
+        end
+        if @last == elm then @last = aux end
+        elm = nil
+      end
+    end
+  end
   end
 end
